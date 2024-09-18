@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social links</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    font-family: 'Inter Thin', sans-serif;
+
+  }
+
+  body{
+    background-color: hsl(0, 0%, 10%);
+  }
+
+  .container{
+    width: 23%;
+    margin: 50px auto; 
+    background-color:  hsl(0, 0%, 16%);
+    height: 75vh;
+    border-radius: 8px;
+  }
+
+  .image img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 30px;
+  }
+
+  .image{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .name-main h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200;
+    margin-bottom: 8px;
+    font-size: 23px;
+  }
+
+  .address p{
+    color:  hsl(75, 94%, 57%);
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  .desc span{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+    font-weight: 100;
+  }
+
+  .list{
+    margin-top: 20px;
+  }
+
+  .list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list ul li{
+    margin: 10px 0;
+    color: white;
+    text-align: center;
+    background-color:hsl(0, 0%, 20%) ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+  }
+
+
+
+  .list ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: inherit;
+
+  }
+
+  .list ul li:hover{
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 20%);
+  }
+
+  @media screen and (max-width: 375px){
+    .container{
+      width: 80%;
+      height: 90vh;
+    }
+  }
+
+  @media screen and (max-width: 1440px){
+    .container{
+      width:25%;
+      height: 75vh;
+    }
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="assets/images/avatar-jessica.jpeg">
+    </div>
+
+    <div class="name-main">
+      <h1>Jessica Randall</h1>
+      <div class="address">
+        <p>London, United Kingdom</p>
+      </div>
+      <div class="desc"><span>"Front-end developer and avid reader."</span></div>
+    </div>
+
+    <div class="list">
+      <ul>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Frontend Mentor</a></li>
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Instagram</a></li>
+
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
